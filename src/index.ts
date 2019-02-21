@@ -1,4 +1,3 @@
-import { Counter } from './counter/counter';
 import { someHelpfulUtilFunction } from './util';
 
 
@@ -19,7 +18,7 @@ export class Value {
     this.value = value;
   }
 
-  setProps(props: Props) {
+  setProps(props: Props): void {
     this.props = props;
   }
 
@@ -28,16 +27,5 @@ export class Value {
   }
 }
 
-new Value().setValue(1000);
-new Value().setProps({ x: 1000, y: 1000 });
+export { someHelpfulUtilFunction };
 
-const counter = new Counter();
-counter.add();
-counter.add();
-counter.add();
-
-counter.getValue();
-
-counter.subtract();
-counter.subtract();
-counter.getValue();

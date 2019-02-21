@@ -1,16 +1,16 @@
 export class Counter {
-  private value = 0;
+    private value: number = 0;
 
-  getValue() {
-    return this.value;
-  }
+    getValue(): number {
+        return this.value;
+    }
 
-  add() {
-    this.value = this.value + 1;
-  }
+    add(): void {
+        this.value = this.value + 1;
+    }
 
-  subtract() {
-    this.value = this.value - 1;
-  }
+    subtract(): void {
+        this.value = this.value - 1;
+    }
 }
 
